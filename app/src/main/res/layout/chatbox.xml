@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="646dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/input_Message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/receivedMessagelist"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:paddingLeft="4dp"
+            android:paddingTop="10dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:listSelector="@drawable/bkg">
+
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/sendMessgeList"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.5"
+            android:background="@color/White"
+            android:listSelector="@drawable/bkg"
+            android:padding="4dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_Message"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:alpha="1"
+        android:autofillHints=""
+        android:background="#FDFCFC"
+        android:hint="@string/type_a_message"
+        android:inputType="date|textShortMessage|textLongMessage|text"
+        android:selectAllOnFocus="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/camera_button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/camera_button2"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/send_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/input_Message"
+        app:srcCompat="@mipmap/camera" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:background="#00B8D4"
+        android:onClick="onClickSend"
+        android:shadowColor="#C62828"
+        android:text="@string/send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/camera_button2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

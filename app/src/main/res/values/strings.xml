@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DebriNet Messenger</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="logo_of_collage">Logo of Collage</string>
+    <string name="send">Send</string>
+    <string name="camera">Camera</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="list_devices">List Devices</string>
+    <string name="find">FIND</string>
+    <string name="none_found">none_found </string>
+    <string name="connecte_devices">Connecte Devices</string>
+    <string name="discovered_dvices">Discovered Dvices</string>
+    <string name="none_paired">Not Paired</string>
+</resources>
